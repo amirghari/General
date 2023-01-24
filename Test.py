@@ -1,6 +1,6 @@
 import ctypes
 
-libc = ctypes.CDLL('/text.a')
+libc = ctypes.CDLL('text.so')
 
 libc.example_function.argtypes = [ctypes.c_int]
 libc.example_function.restype = ctypes.c_int
